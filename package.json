@@ -1,0 +1,31 @@
+{
+  "name": "boilerplate-node-hamoatech",
+  "version": "1.0.0",
+  "description": "Boilerplate para inciar projetos com Nodejs",
+  "main": "index.js",
+  "repository": "https://github.com/jmd-urbanismo/boilerplate-node-hamoatech",
+  "author": "Hamoa Tech",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "eslint-config-standard": "^17.1.0",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.1",
+    "prisma": "^4.16.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.41.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-import": "^2.27.5",
+    "husky": "^8.0.0"
+  },
+  "scripts": {
+    "dev": "nodemon index_dev.js",
+    "migrate": "npx prisma migrate dev --name init",
+    "prisma format": "npx prisma format",
+    "lint": "eslint --fix .",
+    "prepare": "husky install"
+  }
+}
