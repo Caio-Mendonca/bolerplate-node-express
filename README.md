@@ -12,3 +12,16 @@
 
 
 ## INIT 🤘🚀
+
+ install dependencies:
+ ```
+ yarn 
+ ```
+ setup husky
+ ```
+ yarn prepare
+ ```
+ start:
+ ```
+ yarn dev
+ ```
